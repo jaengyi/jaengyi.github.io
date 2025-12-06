@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: 전체목록
+nav_order: 2
 ---
 
 ## 날짜별 전체 글 목록

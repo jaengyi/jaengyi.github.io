@@ -1,22 +1,32 @@
 ---
-layout: page
+layout: default
 title: 사회
 permalink: /categories/social-studies/
+parent: 교과목
+nav_order: 3
 ---
 
-<div class="posts">
+# 사회
+{: .no_toc }
+
+## 목차
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## 글 목록
+
+<ul>
   {% for post in site.categories.social-studies %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</time>
-    {{ post.excerpt }}
-  </article>
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="fs-3 text-grey-dk-000"> - {{ post.date | date: "%Y년 %m월 %d일" }}</span>
+  </li>
   {% endfor %}
-</div>
+</ul>
 
 {% if site.categories.social-studies.size == 0 %}
 <p>아직 작성된 글이 없습니다.</p>
