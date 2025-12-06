@@ -1,29 +1,27 @@
 ---
 layout: page
-title: About
+title: 소개
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  안녕하세요! 1985년 국민학교 5학년 표준전과를 모티브로 한 블로그입니다.
 </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## 블로그 소개
 
-There are currently two themes built on Poole:
+이 블로그는 1985년 대한민국 국민학교 5학년 때의 "표준전과"를 기억하며 만든 공간입니다.
+각 글은 9가지 교과목으로 분류되어 관리됩니다.
 
-- [Hyde](https://hyde.getpoole.com)
-- [Lanyon](https://lanyon.getpoole.com)
+### 교과목
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+- **국어**: 언어, 문학, 글쓰기 관련 글
+- **산수**: 수학, 알고리즘, 논리 관련 글
+- **사회**: 사회, 경제, 문화 관련 글
+- **자연**: 과학, 기술, 자연 관련 글
+- **도덕**: 철학, 윤리, 가치관 관련 글
+- **체육**: 건강, 운동, 활동 관련 글
+- **음악**: 음악, 소리, 예술 관련 글
+- **미술**: 시각예술, 디자인, 창작 관련 글
+- **실과**: 실용기술, 생활, 만들기 관련 글
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-- Built for [Jekyll](https://jekyllrb.com)
-- Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-- Coded with [Atom](https://atom.io), an amazing open source code editor
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+옛날 교과서의 따뜻하고 소박한 느낌을 담아가려 합니다.

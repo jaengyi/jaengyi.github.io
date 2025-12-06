@@ -1,12 +1,14 @@
 // Messages
 //
-// Show alert messages to users. You may add it to single elements like a `<p>`,
-// or to a parent if there are multiple elements to show.
+// 1985년 교과서 스타일 강조 박스
 
 .message {
   padding: var(--spacer);
   margin-bottom: var(--spacer);
-  color: var(--gray-900);
-  background-color: var(--yellow-100);
-  border-radius: var(--border-radius);
+  color: var(--retro-brown);
+  background-color: var(--retro-highlight);
+  border-radius: 0;
+  border: 2px solid var(--retro-border);
+  border-left: 4px solid var(--retro-red);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
 }
