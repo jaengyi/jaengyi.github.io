@@ -1,4 +1,15 @@
 :root {
+  /* 1985년 표준전과 레트로 색상 */
+  --retro-paper: #f5f0e8;  /* 오래된 종이색 */
+  --retro-paper-dark: #e8dfd0;  /* 약간 어두운 종이색 */
+  --retro-brown: #3d2817;  /* 진한 갈색 */
+  --retro-brown-light: #5a4030;  /* 밝은 갈색 */
+  --retro-red: #c83f3f;  /* 옛날 빨간펜 색 */
+  --retro-blue: #2d5a8a;  /* 옛날 파란펜 색 */
+  --retro-green: #3a6b3a;  /* 옛날 초록색 */
+  --retro-border: #8b7355;  /* 갈색 테두리 */
+  --retro-highlight: #fff9e6;  /* 형광펜 효과 */
+
   --gray-000: #f8f9fa;
   --gray-100: #f1f3f5;
   --gray-200: #e9ecef;
@@ -9,76 +20,40 @@
   --gray-700: #495057;
   --gray-800: #343a40;
   --gray-900: #212529;
-  --dark-poole-001: hsl(200, 3%, 12%);
-  --dark-poole-002: hsl(0, 0%, 85%);
-  --dark-poole-link-color: rgba(255, 255, 255, 0.75);
-  --dark-poole-link-hover: #fff;
 
-  --red: #fa5252;
-  --pink: #e64980;
-  --grape: #be4bdb;
-  --purple: #7950f2;
-  --indigo: #4c6ef5;
-  --blue: #228be6;
-  --cyan: #15aabf;
-  --teal: #12b886;
-  --green: #40c057;
-  --yellow: #fab005;
-  --orange: #fd7e14;
+  /* 세리프 폰트로 변경 (명조체 느낌) */
+  --body-font: "Noto Serif KR", "Nanum Myeongjo", Georgia, "Times New Roman", serif;
+  --body-font-size: 18px;
+  --body-line-height: 1.8;
+  --body-color: var(--retro-brown);
+  --body-bg: var(--retro-paper);
 
-  --blue-300: #74c0fc;
-  --blue-400: #4dabf7;
-  --yellow-100: #fff3bf;
+  --link-color: var(--retro-blue);
+  --link-hover-color: var(--retro-red);
 
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --body-font-size: 20px;
-  --body-line-height: 1.5;
-  --body-color: var(--gray-700);
-  --body-bg: #fff;
+  --heading-color: var(--retro-brown);
 
-  --link-color: var(--blue);
-  --link-hover-color: #1c7ed6;
+  --border-color: var(--retro-border);
+  --border-radius: 0;  /* 직각 모서리 */
 
-  --heading-color: var(--gray-900);
-
-  --border-color: var(--gray-300);
-  --border-radius: 0.25rem;
-
-  --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --code-color: var(--grape);
-  --code-bg: var(--gray-000);
+  --code-font: "Courier New", "Nanum Gothic Coding", monospace;
+  --code-color: var(--retro-brown-light);
+  --code-bg: var(--retro-paper-dark);
 
   --spacer: 1rem;
   --spacer-2: calc(var(--spacer) * 1.5);
   --spacer-3: calc(var(--spacer) * 3);
 }
 
+/* 다크모드 비활성화 - 항상 레트로 테마 유지 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-color: var(--gray-300);
-    --body-bg: var(--gray-800);
-
-    --heading-color: #fff;
-
-    --link-color: var(--blue-300);
-    --link-hover-color: var(--blue-400);
-
-    --border-color: rgba(255, 255, 255, 0.15);
-
-    --code-bg: var(--gray-900);
+    --body-color: var(--retro-brown);
+    --body-bg: var(--retro-paper);
+    --heading-color: var(--retro-brown);
+    --link-color: var(--retro-blue);
+    --link-hover-color: var(--retro-red);
+    --border-color: var(--retro-border);
+    --code-bg: var(--retro-paper-dark);
   }
-}
-
-// Dark Poole theme
-[data-theme="dark-poole"] {
-  --body-color: var(--dark-poole-002);
-  --body-bg: var(--dark-poole-001);
-  --heading-color: var(--dark-poole-002);
-  --link-color: var(--dark-poole-link-color);
-  --link-hover-color: var(--dark-poole-link-hover);
-  --border-color: rgba(255, 255, 255, 0.15);
-  --code-bg: var(--gray-900);
 }

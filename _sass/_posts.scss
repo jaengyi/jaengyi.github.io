@@ -1,11 +1,14 @@
 // Posts and pages
 //
-// Each post is wrapped in `.post` and is used on default and post layouts. Each
-// page is wrapped in `.page` and is only used on the page layout.
+// 1985년 교과서 스타일 포스트
 
 .page,
 .post {
   margin-bottom: 4em;
+  padding: var(--spacer-2);
+  background-color: var(--retro-paper);
+  border: 2px solid var(--retro-border);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
 
   li + li {
     margin-top: .25rem;
@@ -16,6 +19,8 @@
 .page-title,
 .post-title {
   color: var(--heading-color);
+  border-bottom: 2px solid var(--retro-red);
+  padding-bottom: 0.5rem;
 }
 .page-title,
 .post-title {
@@ -27,7 +32,7 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    color: var(--retro-red);
   }
 }
 
@@ -36,7 +41,15 @@
   display: block;
   margin-top: -.5rem;
   margin-bottom: var(--spacer);
-  color: var(--gray-600);
+  color: var(--retro-brown-light);
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.post-category {
+  color: var(--retro-blue);
+  font-size: 0.85em;
+  margin-left: 0.5rem;
 }
 
 

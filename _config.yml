@@ -1,9 +1,9 @@
 # Setup
-title: Wooky's Blog
+title: 표준전과 - 5학년
 url: https://jaengyi.github.io
-paginate: 1
+paginate: 5
 baseurl: ""
-permalink: pretty
+permalink: /:categories/:year/:month/:day/:title/
 
 # Gems
 plugins:
@@ -32,17 +32,55 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
+  name: 재엉이
   url: https://jaengyi.github.io
   email: jaengyi@gmail.com
+
+# 1985년 국민학교 5학년 표준전과 교과목
+categories:
+  - name: 국어
+    slug: korean
+  - name: 산수
+    slug: arithmetic
+  - name: 사회
+    slug: social-studies
+  - name: 자연
+    slug: science
+  - name: 도덕
+    slug: ethics
+  - name: 체육
+    slug: physical-education
+  - name: 음악
+    slug: music
+  - name: 미술
+    slug: art
+  - name: 실과
+    slug: practical-arts
 
 # Custom vars
 version: 3.0.0
 
 # Navbar page list
 nav:
-  - title: Blog
+  - title: 전체목록
     url: /archive
-
-  - title: About
+  - title: 국어
+    url: /categories/korean
+  - title: 산수
+    url: /categories/arithmetic
+  - title: 사회
+    url: /categories/social-studies
+  - title: 자연
+    url: /categories/science
+  - title: 도덕
+    url: /categories/ethics
+  - title: 체육
+    url: /categories/physical-education
+  - title: 음악
+    url: /categories/music
+  - title: 미술
+    url: /categories/art
+  - title: 실과
+    url: /categories/practical-arts
+  - title: 소개
     url: /about

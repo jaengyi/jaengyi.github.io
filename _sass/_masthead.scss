@@ -1,30 +1,52 @@
 // Masthead
 //
-// Super small header above the content for site name and short description.
+// 1985년 교과서 스타일 헤더
 
 .masthead {
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
+  border-bottom: 3px double var(--retro-border);
+  border-top: 3px double var(--retro-border);
+  background-color: var(--retro-paper-dark);
 }
 
 .masthead-title {
   margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 
   a {
     color: inherit;
     text-decoration: none;
+    border-bottom: 2px solid var(--retro-red);
+
+    &:hover {
+      border-bottom-color: var(--retro-blue);
+    }
   }
 
   small {
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
-// Navbar styles
+// Navbar styles - 옛날 목차 느낌
 .nav {
   float: right;
   line-height: 1.25rem;
-  word-spacing: 1rem;
+  word-spacing: 0.5rem;
+
+  small a {
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--retro-border);
+    background-color: var(--retro-paper);
+
+    &:hover {
+      background-color: var(--retro-highlight);
+      border-color: var(--retro-red);
+    }
+  }
 }

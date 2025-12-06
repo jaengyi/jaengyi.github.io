@@ -1,18 +1,26 @@
 ---
-layout: default
-title: Archive
+layout: page
+title: 전체목록
 ---
 
-# Archive
+## 날짜별 전체 글 목록
 
-Browse all posts by month and year.
-
-{% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+{% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y년 %m월'" %}
 {% for yearMonth in postsByYearMonth %}
-  <h2>{{ yearMonth.name }}</h2>
+  <h3>{{ yearMonth.name }}</h3>
   <ul>
     {% for post in yearMonth.items %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</span>
+        {% if post.categories %}
+          <span class="post-category">[{{ post.categories | join: ", " }}]</span>
+        {% endif %}
+      </li>
     {% endfor %}
   </ul>
 {% endfor %}
+
+{% if site.posts.size == 0 %}
+<p>아직 작성된 글이 없습니다.</p>
+{% endif %}
